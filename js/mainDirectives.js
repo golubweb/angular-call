@@ -85,8 +85,7 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', 'storageFactory',
         elem.addEventListener(evt, function(e){
           $(ul).remove();
 
-          if (regex.test(elem.value))
-          {
+          if (regex.test(elem.value)) {
             if(attrs.numberScore){
               $scope.scoreResult(elem.value);
 
@@ -96,8 +95,8 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', 'storageFactory',
             } else {
               $scope.deysResult(elem.value);
             }
-            console.log(value.length == 0);
-            if(value.length < 1){
+            
+            if(value.length == 0){
               $(ul).remove();
             }
 
@@ -155,7 +154,7 @@ myApp.directive('numberScore', [ function(){
     restrict: 'A',
     require: '^searchForm',
     link: function(scope, element, attrs, searchFormController){
-      searchFormController.numberInput(element, attrs, '../test/partials/search_ScoreTotal.tpl.html', 'keyup', '.search-score');
+      searchFormController.numberInput(element, attrs, '/partials/search_ScoreTotal.tpl.html', 'keyup', '.search-score');
     }
   }
 }]);
@@ -165,7 +164,7 @@ myApp.directive('numberDuration', [ function(){
     restrict: 'A',
     require: '^searchForm',
     link: function(scope, element, attrs, searchFormController){
-      searchFormController.numberInput(element, attrs, '../test/partials/search_Duration.tpl.html', 'keyup', '.search-duration');
+      searchFormController.numberInput(element, attrs, '/partials/search_Duration.tpl.html', 'keyup', '.search-duration');
     }
   }
 }]);
@@ -175,7 +174,7 @@ myApp.directive('numberDays', [ function(){
     restrict: 'A',
     require: '^searchForm',
     link: function(scope, element, attrs, searchFormController){
-      searchFormController.numberInput(element, attrs, '../test/partials/search_Days.tpl.html', 'keyup', '.search-days');
+      searchFormController.numberInput(element, attrs, '/partials/search_Days.tpl.html', 'keyup', '.search-days');
     }
   }
 }]);
@@ -196,7 +195,7 @@ myApp.directive('onKeydown', ['$compile', '$templateRequest', function($compile,
         if(agentName.length >= 3){
           searchCtrl.agentResult(agentName);
 
-          $templateRequest('../test/partials/search_AgentID.tpl.html').then(function(html){
+          $templateRequest('/partials/search_AgentID.tpl.html').then(function(html){
             var template = angular.element(html);
 
             elem.parent().append($compile(template)(scope));

@@ -1,13 +1,13 @@
 myApp.filter("trustUrl", ['$sce', function ($sce) {
-    return function (recordingUrl) {
-        return $sce.trustAsResourceUrl(recordingUrl);
-    };
+	return function (recordingUrl) {
+		return $sce.trustAsResourceUrl(recordingUrl);
+	};
 }]);
 
 myApp.filter('moment', [ function () {
   	return function (date, method) {
   		var momented = moment(date);
-        return momented[method].apply(momented, Array.prototype.slice.call(arguments, 2));
+  		return momented[method].apply(momented, Array.prototype.slice.call(arguments, 2));
   	};
 }]);	
 
@@ -15,18 +15,18 @@ myApp.filter('moment', [ function () {
 myApp.filter('orderOneItem', function(){
 	return function(collection, keyname) {
       	var output = [], 
-        	keys = [];
+        keys = [];
 
-	    angular.forEach(collection, function(item) {
-	        var key = item[keyname];
+      	angular.forEach(collection, function(item) {
+      		var key = item[keyname];
 
-	        if(keys.indexOf(key) === -1) {
-	            keys.push(key);
-	            output.push(item);
-	        }
-	    });
-	    return output;
-    }
+      		if(keys.indexOf(key) === -1) {
+      			keys.push(key);
+      			output.push(item);
+      		}
+      	});
+      	return output;
+	}
 });
 
 myApp.filter('durationConvert', function(){
@@ -86,10 +86,6 @@ myApp.filter('dateConvert', function(){
       item.year = date[2];
 
       var year = (currentYear - parseInt(item.year)) * 12;
-
-      console.log(parseInt(item.day) - currentDay);
-      console.log(year + (parseInt(item.month) * 31) + (parseInt(item.day) - currentDay) );
-
       item.age = year + (parseInt(item.month) * 31) + (parseInt(item.day) - currentDay);
 
       return item;
