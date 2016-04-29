@@ -1,0 +1,1301 @@
+[
+	{
+		"callId": "1",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "doe",
+			"agentName": "Jane Doe"
+		},
+		"client": {
+			"clientID": "customer1",
+			"clientName": "Tywin Lannister"
+		},
+		"callStart": "Wed Jun 10 2016 13:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 14:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "3",
+			"managerScore": "4",
+			"totalScore": "3.5",
+			"improvement": "Soft skills ­ communication",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "2",
+		"callType": "video",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Don",
+			"agentName": "Don Yo"
+		},
+		"client": {
+			"clientID": "customer2",
+			"clientName": "Lon Partridge"
+		},
+		"callStart": "Wed Feb 10 2015 15:30:09 GMT+0200",
+		"callEnd": "Wed Feb 10 2015 16:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call2.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "4",
+			"totalScore": "4.5",
+			"improvement": "hard skills ­ products",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "3",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Mar 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Mar 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "4",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "Bon",
+			"agentName": "Hock"
+		},
+		"client": {
+			"clientID": "customer4",
+			"clientName": "Hock Ensmith"
+		},
+		"callStart": "Wed Apr 15 2016 11:10:09 GMT+0200",
+		"callEnd": "Wed Apr 15 2016 11:49:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "2",
+			"managerScore": "3",
+			"totalScore": "2.5",
+			"improvement": "call technique",
+			"resume": "Jelly-o icing icing."
+		}
+	},
+
+	{
+		"callId": "5",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed May 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed May 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "6",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "jdoe",
+			"agentName": "Jane Doe"
+		},
+		"client": {
+			"clientID": "customer1",
+			"clientName": "Tywin Lannister"
+		},
+		"callStart": "Wed Jun 10 2015 13:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 14:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "3",
+			"managerScore": "4",
+			"totalScore": "3.5",
+			"improvement": "Soft skills ­ communication",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "7",
+		"callType": "video",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Don",
+			"agentName": "Don Yo"
+		},
+		"client": {
+			"clientID": "customer2",
+			"clientName": "Lon Partridge"
+		},
+		"callStart": "Wed Jun 10 2015 15:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 16:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call2.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "4",
+			"totalScore": "4.5",
+			"improvement": "hard skills ­ products",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "8",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jul 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jul 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "9",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "Bon",
+			"agentName": "Hock"
+		},
+		"client": {
+			"clientID": "customer4",
+			"clientName": "Hock Ensmith"
+		},
+		"callStart": "Wed Aug 15 2016 11:10:09 GMT+0200",
+		"callEnd": "Wed Aug 15 2016 11:49:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "2",
+			"managerScore": "3",
+			"totalScore": "2.5",
+			"improvement": "call technique",
+			"resume": "Jelly-o icing icing."
+		}
+	},
+
+	{
+		"callId": "10",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Sep 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Sep 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "11",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "jdoe",
+			"agentName": "Jane Doe"
+		},
+		"client": {
+			"clientID": "customer1",
+			"clientName": "Tywin Lannister"
+		},
+		"callStart": "Wed Oct 10 2015 13:30:09 GMT+0200",
+		"callEnd": "Wed Oct 10 2015 14:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "3",
+			"managerScore": "4",
+			"totalScore": "3.5",
+			"improvement": "Soft skills ­ communication",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "12",
+		"callType": "video",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Don",
+			"agentName": "Don Yo"
+		},
+		"client": {
+			"clientID": "customer2",
+			"clientName": "Lon Partridge"
+		},
+		"callStart": "Wed Nov 10 2015 15:30:09 GMT+0200",
+		"callEnd": "Wed Nov 10 2015 16:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call2.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "4",
+			"totalScore": "4.5",
+			"improvement": "hard skills ­ products",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "13",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Dec 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Dec 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "14",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "Bon",
+			"agentName": "Hock"
+		},
+		"client": {
+			"clientID": "customer4",
+			"clientName": "Hock Ensmith"
+		},
+		"callStart": "Wed Jun 15 2016 11:10:09 GMT+0200",
+		"callEnd": "Wed Jun 15 2016 11:49:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "2",
+			"managerScore": "3",
+			"totalScore": "2.5",
+			"improvement": "call technique",
+			"resume": "Jelly-o icing icing."
+		}
+	},
+
+	{
+		"callId": "15",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jun 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "16",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "jdoe",
+			"agentName": "Jane Doe"
+		},
+		"client": {
+			"clientID": "customer1",
+			"clientName": "Tywin Lannister"
+		},
+		"callStart": "Wed Jun 10 2015 13:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 14:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "3",
+			"managerScore": "4",
+			"totalScore": "3.5",
+			"improvement": "Soft skills ­ communication",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "17",
+		"callType": "video",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Don",
+			"agentName": "Don Yo"
+		},
+		"client": {
+			"clientID": "customer2",
+			"clientName": "Lon Partridge"
+		},
+		"callStart": "Wed Jun 10 2015 15:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 16:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call2.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "4",
+			"totalScore": "4.5",
+			"improvement": "hard skills ­ products",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "18",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jun 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "19",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "Bon",
+			"agentName": "Hock"
+		},
+		"client": {
+			"clientID": "customer4",
+			"clientName": "Hock Ensmith"
+		},
+		"callStart": "Wed Jun 15 2016 11:10:09 GMT+0200",
+		"callEnd": "Wed Jun 15 2016 11:49:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "2",
+			"managerScore": "3",
+			"totalScore": "2.5",
+			"improvement": "call technique",
+			"resume": "Jelly-o icing icing."
+		}
+	},
+
+	{
+		"callId": "20",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jun 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "21",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "jdoe",
+			"agentName": "Jane Doe"
+		},
+		"client": {
+			"clientID": "customer1",
+			"clientName": "Tywin Lannister"
+		},
+		"callStart": "Wed Jun 10 2015 13:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 14:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "3",
+			"managerScore": "4",
+			"totalScore": "3.5",
+			"improvement": "Soft skills ­ communication",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "22",
+		"callType": "video",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Don",
+			"agentName": "Don Yo"
+		},
+		"client": {
+			"clientID": "customer2",
+			"clientName": "Lon Partridge"
+		},
+		"callStart": "Wed Jun 10 2015 15:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 16:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call2.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "4",
+			"totalScore": "5.5",
+			"improvement": "hard skills ­ products",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "23",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jun 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "24",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "Bon",
+			"agentName": "Hock"
+		},
+		"client": {
+			"clientID": "customer4",
+			"clientName": "Hock Ensmith"
+		},
+		"callStart": "Wed Jun 15 2016 11:10:09 GMT+0200",
+		"callEnd": "Wed Jun 15 2016 11:49:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "2",
+			"managerScore": "3",
+			"totalScore": "2.5",
+			"improvement": "call technique",
+			"resume": "Jelly-o icing icing."
+		}
+	},
+
+	{
+		"callId": "25",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jun 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "26",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "jdoe",
+			"agentName": "Jane Doe"
+		},
+		"client": {
+			"clientID": "customer1",
+			"clientName": "Tywin Lannister"
+		},
+		"callStart": "Wed Jun 10 2015 13:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 14:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "3",
+			"managerScore": "4",
+			"totalScore": "3.5",
+			"improvement": "Soft skills ­ communication",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "27",
+		"callType": "video",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Don",
+			"agentName": "Don Yo"
+		},
+		"client": {
+			"clientID": "customer2",
+			"clientName": "Lon Partridge"
+		},
+		"callStart": "Wed Jun 10 2015 15:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 16:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call2.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "4",
+			"totalScore": "5.5",
+			"improvement": "hard skills ­ products",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "28",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jun 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "29",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "Bon",
+			"agentName": "Hock"
+		},
+		"client": {
+			"clientID": "customer4",
+			"clientName": "Hock Ensmith"
+		},
+		"callStart": "Wed Jun 15 2016 11:10:09 GMT+0200",
+		"callEnd": "Wed Jun 15 2016 11:49:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "2",
+			"managerScore": "3",
+			"totalScore": "2.5",
+			"improvement": "call technique",
+			"resume": "Jelly-o icing icing."
+		}
+	},
+
+	{
+		"callId": "30",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jun 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "31",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "jdoe",
+			"agentName": "Jane Doe"
+		},
+		"client": {
+			"clientID": "customer1",
+			"clientName": "Tywin Lannister"
+		},
+		"callStart": "Wed Jun 10 2015 13:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 14:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "3",
+			"managerScore": "4",
+			"totalScore": "3.5",
+			"improvement": "Soft skills ­ communication",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "32",
+		"callType": "video",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Don",
+			"agentName": "Don Yo"
+		},
+		"client": {
+			"clientID": "customer2",
+			"clientName": "Lon Partridge"
+		},
+		"callStart": "Wed Jun 10 2015 15:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 16:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call2.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "4",
+			"totalScore": "5.5",
+			"improvement": "hard skills ­ products",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "33",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jun 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "34",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "Bon",
+			"agentName": "Hock"
+		},
+		"client": {
+			"clientID": "customer4",
+			"clientName": "Hock Ensmith"
+		},
+		"callStart": "Wed Jun 15 2016 11:10:09 GMT+0200",
+		"callEnd": "Wed Jun 15 2016 11:49:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "2",
+			"managerScore": "3",
+			"totalScore": "2.5",
+			"improvement": "call technique",
+			"resume": "Jelly-o icing icing."
+		}
+	},
+
+	{
+		"callId": "35",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jun 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "36",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "jdoe",
+			"agentName": "Jane Doe"
+		},
+		"client": {
+			"clientID": "customer1",
+			"clientName": "Tywin Lannister"
+		},
+		"callStart": "Wed Jun 10 2015 13:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 14:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "3",
+			"managerScore": "4",
+			"totalScore": "3.5",
+			"improvement": "Soft skills ­ communication",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "37",
+		"callType": "video",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Don",
+			"agentName": "Don Yo"
+		},
+		"client": {
+			"clientID": "customer2",
+			"clientName": "Lon Partridge"
+		},
+		"callStart": "Wed Jun 10 2015 15:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 16:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call2.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "4",
+			"totalScore": "4.5",
+			"improvement": "hard skills ­ products",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "38",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jun 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "39",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "Bon",
+			"agentName": "Hock"
+		},
+		"client": {
+			"clientID": "customer4",
+			"clientName": "Hock Ensmith"
+		},
+		"callStart": "Wed Jun 15 2016 11:10:09 GMT+0200",
+		"callEnd": "Wed Jun 15 2016 11:49:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "2",
+			"managerScore": "3",
+			"totalScore": "2.5",
+			"improvement": "call technique",
+			"resume": "Jelly-o icing icing."
+		}
+	},
+
+	{
+		"callId": "40",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jun 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "41",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "jdoe",
+			"agentName": "Jane Doe"
+		},
+		"client": {
+			"clientID": "customer1",
+			"clientName": "Tywin Lannister"
+		},
+		"callStart": "Wed Jun 10 2015 13:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 14:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "3",
+			"managerScore": "4",
+			"totalScore": "3.5",
+			"improvement": "Soft skills ­ communication",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "42",
+		"callType": "video",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Don",
+			"agentName": "Don Yo"
+		},
+		"client": {
+			"clientID": "customer2",
+			"clientName": "Lon Partridge"
+		},
+		"callStart": "Wed Jun 10 2015 15:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 16:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call2.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "4",
+			"totalScore": "5.5",
+			"improvement": "hard skills ­ products",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "43",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jun 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "44",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "Bon",
+			"agentName": "Hock"
+		},
+		"client": {
+			"clientID": "customer4",
+			"clientName": "Hock Ensmith"
+		},
+		"callStart": "Wed Jun 15 2016 11:10:09 GMT+0200",
+		"callEnd": "Wed Jun 15 2016 11:49:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "2",
+			"managerScore": "3",
+			"totalScore": "2.5",
+			"improvement": "call technique",
+			"resume": "Jelly-o icing icing."
+		}
+	},
+
+	{
+		"callId": "45",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jun 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "46",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "jdoe",
+			"agentName": "Jane Doe"
+		},
+		"client": {
+			"clientID": "customer1",
+			"clientName": "Tywin Lannister"
+		},
+		"callStart": "Wed Jun 10 2015 13:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 14:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "3",
+			"managerScore": "4",
+			"totalScore": "3.5",
+			"improvement": "Soft skills ­ communication",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "47",
+		"callType": "video",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Don",
+			"agentName": "Don Yo"
+		},
+		"client": {
+			"clientID": "customer2",
+			"clientName": "Lon Partridge"
+		},
+		"callStart": "Wed Jun 10 2015 15:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2015 16:30:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call2.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "4",
+			"totalScore": "4.5",
+			"improvement": "hard skills ­ products",
+			"resume": "This agent satisfies Aristotle's conditions. But because she is also simultaneously blameless"
+		}
+	},
+
+	{
+		"callId": "48",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jun 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	},
+
+	{
+		"callId": "49",
+		"callType": "phone",
+		"callDirection": "inbound",
+		"agent": {
+			"agendID": "Bon",
+			"agentName": "Hock"
+		},
+		"client": {
+			"clientID": "customer4",
+			"clientName": "Hock Ensmith"
+		},
+		"callStart": "Wed Jun 15 2016 11:10:09 GMT+0200",
+		"callEnd": "Wed Jun 15 2016 11:49:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call1.mp3"
+		},
+		"evaluation": {
+			"customerScore": "2",
+			"managerScore": "3",
+			"totalScore": "2.5",
+			"improvement": "call technique",
+			"resume": "Jelly-o icing icing."
+		}
+	},
+
+	{
+		"callId": "50",
+		"callType": "phone",
+		"callDirection": "outbound",
+		"agent": {
+			"agendID": "Brent",
+			"agentName": "Mork"
+		},
+		"client": {
+			"clientID": "customer3",
+			"clientName": "Beth Hockensmith"
+		},
+		"callStart": "Wed Jun 10 2016 12:30:09 GMT+0200",
+		"callEnd": "Wed Jun 10 2016 12:46:15 GMT+0200",
+		"callMedias": {
+			"audioFile": "call3.mp3"
+		},
+		"evaluation": {
+			"customerScore": "5",
+			"managerScore": "6",
+			"totalScore": "5.5",
+			"improvement": "call technique",
+			"resume": "Chupa chups danish bonbon lollipop halvah jujubes apple pie gingerbread."
+		}
+	}
+]

@@ -1,0 +1,5 @@
+<ul class="search-wrap">
+	<li data-ng-repeat=" item in agent | orderOneItem: 'callId' ">
+		<a href="#/call/{{ item.callId }}">Call ID#{{ item.callId }} - AgentID: {{ item.agent.agendID }}</a>
+	</li>
+</ul>

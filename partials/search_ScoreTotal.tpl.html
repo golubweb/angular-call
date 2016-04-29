@@ -1,0 +1,5 @@
+<ul class="search-score">
+	<li data-ng-repeat=" item in score | orderOneItem: 'callId' ">
+		<a href="#/call/{{ item.callId }}">Call ID#{{ item.callId }} - Total Score: {{ item.evaluation.totalScore }}</a>
+	</li>
+</ul>

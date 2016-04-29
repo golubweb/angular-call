@@ -1,0 +1,5 @@
+<ul class="search-duration">
+	<li data-ng-repeat=" item in duration | orderOneItem: 'callId' ">
+		<a href="#/call/{{ item.callId }}">Call ID#{{ item.callId }} - Duration: {{ item.hours + ':' + item.minutes + ':' + item.seconds }}</a>
+	</li>
+</ul>
