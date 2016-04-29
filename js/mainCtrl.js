@@ -6,32 +6,34 @@ myApp.controller('mainCtrl', ['$scope', '$rootScope', '$filter', 'callServices',
 	$scope.year = $scope.date.getFullYear();
 	$scope.day = $scope.date.getDate();
 
-	if(!localStorage['call_items']){
-		$scope.list = [];
-
-		callServices.getData('data/calls.json').then(function(response){
-			$rootScope.pagCount = Object.keys(response.data).length;
-
-			angular.forEach(response.data, function(item, index){
-				var convert = item.callStart.slice(4, 15);
-				var convertDate = convert.split(/[ ,]+/);
-
-				var durationStart = item.callStart.slice(15, 24);
-				var durationEnd = item.callEnd.slice(15, 24);
-
-				item = $filter('durationConvert')(item, durationStart, durationEnd);
-				item = $filter('dateConvert')(item, convertDate, $scope.year, $scope.day);
-
-				$scope.list.push(item);
+	$scope.storage = function(){
+		if(!localStorage['call_items']){
+			$scope.list = [];
+	
+			callServices.getData('data/calls.json').then(function(response){
+				$rootScope.pagCount = Object.keys(response.data).length;
+	
+				angular.forEach(response.data, function(item, index){
+					var convert = item.callStart.slice(4, 15);
+					var convertDate = convert.split(/[ ,]+/);
+	
+					var durationStart = item.callStart.slice(15, 24);
+					var durationEnd = item.callEnd.slice(15, 24);
+	
+					item = $filter('durationConvert')(item, durationStart, durationEnd);
+					item = $filter('dateConvert')(item, convertDate, $scope.year, $scope.day);
+	
+					$scope.list.push(item);
+				});
+	
+				storageFactory.insetItms($scope.list);
 			});
-
-			storageFactory.insetItms($scope.list);
-		});
-
-	} else {
-		var storageData = JSON.parse(storageFactory.getItms());
-		$rootScope.pagCount = Object.keys( storageData ).length;
-		$scope.list = storageData;
+	
+		} else {
+			var storageData = JSON.parse(storageFactory.getItms());
+			$rootScope.pagCount = Object.keys( storageData ).length;
+			$scope.list = storageData;
+		}
 	}
 
 	$scope.range = function(nmb) {

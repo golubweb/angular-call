@@ -25,6 +25,7 @@ myApp.filter('orderOneItem', function(){
 				output.push(item);
 			}
 		});
+
 		return output;
 	}
 });
