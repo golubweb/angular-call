@@ -97,11 +97,11 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', 'storageFactory',
 						}
 
 						if (e.keyCode === 8) {
-							elem.find.remove();
+							elem.find(ul).remove();
 						}
 
 						if(elem.value.length < 1) {
-							elem.find.remove();
+							elem.find(ul).remove();
 						}
 
 						$scope.getTpl(tmp, elmt.parent());
