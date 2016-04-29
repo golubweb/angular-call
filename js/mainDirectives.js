@@ -154,7 +154,7 @@ myApp.directive('numberScore', [ function(){
     restrict: 'A',
     require: '^searchForm',
     link: function(scope, element, attrs, searchFormController){
-      searchFormController.numberInput(element, attrs, '/partials/search_ScoreTotal.tpl.html', 'keyup', '.search-score');
+      searchFormController.numberInput(element, attrs, '../angularCall/partials/search_ScoreTotal.tpl.html', 'keyup', '.search-score');
     }
   }
 }]);
@@ -164,7 +164,7 @@ myApp.directive('numberDuration', [ function(){
     restrict: 'A',
     require: '^searchForm',
     link: function(scope, element, attrs, searchFormController){
-      searchFormController.numberInput(element, attrs, '/partials/search_Duration.tpl.html', 'keyup', '.search-duration');
+      searchFormController.numberInput(element, attrs, '../angularCall/partials/search_Duration.tpl.html', 'keyup', '.search-duration');
     }
   }
 }]);
@@ -174,7 +174,7 @@ myApp.directive('numberDays', [ function(){
     restrict: 'A',
     require: '^searchForm',
     link: function(scope, element, attrs, searchFormController){
-      searchFormController.numberInput(element, attrs, '/partials/search_Days.tpl.html', 'keyup', '.search-days');
+      searchFormController.numberInput(element, attrs, '../angularCall/partials/search_Days.tpl.html', 'keyup', '.search-days');
     }
   }
 }]);
