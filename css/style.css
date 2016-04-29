@@ -26,7 +26,8 @@ body {
   transform: translate(0, 0);
 }
 
-form input[type="text"], textarea {vertical-align: middle; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; border-radius: 0;}
+.container form input[type="text"], 
+.container form textarea {vertical-align: middle; box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none; border-radius: 0;}
 
 a {outline: none; text-decoration: none;}
 
@@ -65,7 +66,7 @@ form[name="callFrm"] .btn-primary {float: left; margin: 0 15px 15px 0;}
 .container aside {float: right; margin: 15px 15px 0 0; border: 1px solid #ccc;}
 aside h2 {font-size: 20px;margin-top: 5px;}
 aside form {width: 100%; display: table;}
-aside form input[type="text"]   {margin: 0 0 15px;}
+aside form input[type="text"] {margin: 0 0 15px;}
 aside form .rowHolder {position: relative;}
 aside form ul {width: 100%; position: absolute; top: 35px; left: 0; z-index: 99; padding: 0; background: #fff; border: 1px solid #ccc; list-style: none;}
 aside form ul li {padding: 0 5px 5px; text-align: left;}
