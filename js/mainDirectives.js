@@ -96,7 +96,7 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', 'storageFactory',
 							$scope.deysResult(elem.value);
 						}
 
-						if(value.length == 0){
+						if (e.keyCode === 8) {
 							$(ul).remove();
 						}
 
