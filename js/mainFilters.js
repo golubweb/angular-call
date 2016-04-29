@@ -87,7 +87,7 @@ myApp.filter('dateConvert', function(){
 		item.year = date[2];
 
 		var year = (currentYear - parseInt(item.year)) * 12;
-		item.age = year + (parseInt(item.month) * 31) + (parseInt(item.day) - currentDay);
+		item.ago = year + (parseInt(item.month) * 31) + (parseInt(item.day) - currentDay);
 
 		return item;
 	}

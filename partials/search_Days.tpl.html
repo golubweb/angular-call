@@ -1,5 +1,5 @@
 <ul class="search-days">
 	<li data-ng-repeat=" item in days | orderOneItem: 'callId' ">
-		<a ng-init="year=item.year; month=item.month; day=item.day" href="#/call/{{ item.callId }}">Call ID#{{ item.callId }} - {{ item.ego }} days</a>
+		<a ng-init="year=item.year; month=item.month; day=item.day" href="#/call/{{ item.callId }}">Call ID#{{ item.callId }} - {{ item.ego }} days ago</a>
 	</li>
 </ul>
