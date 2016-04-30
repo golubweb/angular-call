@@ -1,0 +1,24 @@
+{
+  "name": "angular-call",
+  "version": "1.0.0",
+  "description": "website about calls",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/golubweb/angular-call.git"
+  },
+  "author": "Darko Golubovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/golubweb/angular-call/issues"
+  },
+  "homepage": "https://github.com/golubweb/angular-call#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1"
+  }
+}
