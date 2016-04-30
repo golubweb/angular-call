@@ -80,7 +80,6 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', '$timeout', 'stor
 			this.numberInput = function(elmt, regAttr, tmp, evt, ul) {
 				var elem = elmt[0];
 				var regex = RegExp(regAttr);
-				var value = elem.value;
 
 				elem.addEventListener(evt, function(e){
 					$timeout($scope.removeList($(this)), 500);
