@@ -78,7 +78,7 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', '$timeout', 'stor
 				var regex = RegExp(regAttr);
 
 				elem.addEventListener(evt, function(e){
-					$scope.removeList($(this), ul);
+					$scope.removeList($(this));
 
 					if(regex.test(elem.value)) {
 						if($(elem).is("[number-score]")){
@@ -92,7 +92,7 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', '$timeout', 'stor
 						}
 
 						if(e.keyCode === 8 || elem.value == "" || elem.value == null) {
-							$scope.removeList($(this), ul); 
+							$scope.removeList($(this)); 
 						}
 
 						$scope.getTpl(tmp, elmt.parent());
@@ -144,8 +144,8 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', '$timeout', 'stor
 				});
 			}
 			
-			$scope.removeList = function(elem, ul){
-				$(elem).next(ul).remove();
+			$scope.removeList = function(elem){
+				$(elem).next().remove();
 			}
 		}
 	};
