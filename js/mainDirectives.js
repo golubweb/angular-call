@@ -83,7 +83,7 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', 'storageFactory',
 				var value = elem.value;
 
 				elem.addEventListener(evt, function(e){
-					$(this).find(ul).remove();
+					$(this).next().remove();
 
 					if(regex.test(elem.value)) {
 						if(attrs.numberScore){
@@ -97,11 +97,11 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', 'storageFactory',
 						}
 
 						if (e.keyCode === 8) {
-							$(this).find(ul).remove();
+							$(this).next().remove();
 						}
 
 						if(elem.value.length < 1) {
-							$(this).find(ul).remove();
+							$(this).next().remove();
 						}
 
 						$scope.getTpl(tmp, elmt.parent());
