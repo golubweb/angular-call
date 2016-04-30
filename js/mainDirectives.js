@@ -136,7 +136,7 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', 'storageFactory',
 				$scope.searchDays = JSON.parse(storageFactory.getItms());  
 
 				angular.forEach($scope.searchDays, function(item) {
-					if(parseInt(item.age) <= parseInt(days)){
+					if(parseInt(item.ago) <= parseInt(days)){
 						$scope.days.push(item);
 					} 
 				});
