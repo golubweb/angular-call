@@ -77,19 +77,19 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', '$timeout', 'stor
 			$scope.score = [];
 			$scope.duration = [];
 
-			this.numberInput = function(elmt, attrs, tmp, evt, ul) {
+			this.numberInput = function(elmt, regAttr, tmp, evt, ul) {
 				var elem = elmt[0];
-				var regex = RegExp(attrs.numberScore);
+				var regex = RegExp(regAttr);
 				var value = elem.value;
 
 				elem.addEventListener(evt, function(e){
 					$timeout($scope.removeList($(this)), 500);
 
 					if(regex.test(elem.value)) {
-						if(attrs.numberScore){
+						if(regAttr){
 							$scope.scoreResult(elem.value);
 
-						} else if(attrs.numberDuration) {
+						} else if(regAttr) {
 							$scope.durationResult(elem.value);
 
 						} else {
@@ -102,7 +102,7 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', '$timeout', 'stor
 
 						$scope.getTpl(tmp, elmt.parent());
 					}else {
-						elem.value = value;
+						elem.value = elem.value.substring(0, elem.value.length - 1);
 					}
 
 				});
