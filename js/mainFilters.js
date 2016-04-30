@@ -47,7 +47,7 @@ myApp.filter('durationConvert', function(){
 		var seconds = parseInt(duration.asSeconds() / 1000 % 60);
 		item.seconds = (seconds < 10) ? "0" + seconds : seconds;
 
-		var durationHours = (hours < 1) ? 1 : hours;
+		var durationHours = (hours < 1) ? 0 : hours;
 		item.durationTime = (durationHours * 60) + minutes;
 
 		return item;
