@@ -68,7 +68,7 @@ myApp.directive('audioSource', [ function() {
 	};
 }]);
 
-myApp.directive('searchForm', ['$compile', '$templateRequest', 'storageFactory', function($compile, $templateRequest, storageFactory){
+myApp.directive('searchForm', ['$compile', '$templateRequest', '$timeout', 'storageFactory', function($compile, $templateRequest, $timeout, storageFactory){
 	return {
 		restrict: 'A',
 		controller: function($scope) {
@@ -83,7 +83,7 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', 'storageFactory',
 				var value = elem.value;
 
 				elem.addEventListener(evt, function(e){
-					$(this).next().remove();
+					$timeout($scope.removeList($(this)), 500);
 
 					if(regex.test(elem.value)) {
 						if(attrs.numberScore){
@@ -96,12 +96,8 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', 'storageFactory',
 							$scope.deysResult(elem.value);
 						}
 
-						if (e.keyCode === 8) {
-							$(this).next().remove();
-						}
-
-						if(elem.value.length < 1) {
-							$(this).next().remove();
+						if(e.keyCode === 8 || elem.value == "" || elem.value == null) {
+							$timeout($scope.removeList($(this)), 1000); 
 						}
 
 						$scope.getTpl(tmp, elmt.parent());
@@ -148,6 +144,10 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', 'storageFactory',
 
 					rowElem.append($compile(angular.element(html))($scope));
 				});
+			}
+			
+			$scope.removeList = function(elem){
+				$(elem).next().remove();
 			}
 		}
 	};
