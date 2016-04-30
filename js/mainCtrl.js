@@ -109,9 +109,9 @@ myApp.controller('paginationCtrl', ['$scope', '$compile', '$templateRequest', 's
 
 
 myApp.controller('searchCtrl', ['$scope', 'storageFactory', function($scope, storageFactory){
-	$scope.agent = [];
 
 	this.agentResult = function(searchText){
+		$scope.agent = [];
 		$scope.searchAgent = JSON.parse(storageFactory.getItms());
 
 		angular.forEach($scope.searchAgent, function(item) {

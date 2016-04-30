@@ -72,23 +72,19 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', '$timeout', 'stor
 	return {
 		restrict: 'A',
 		controller: function($scope) {
-			$scope.days = [];
-			$scope.agent = [];
-			$scope.score = [];
-			$scope.duration = [];
 
 			this.numberInput = function(elmt, regAttr, tmp, evt, ul) {
 				var elem = elmt[0];
 				var regex = RegExp(regAttr);
 
 				elem.addEventListener(evt, function(e){
-					$timeout($scope.removeList($(this)), 500);
+					$scope.removeList($(this), ul);
 
 					if(regex.test(elem.value)) {
-						if(regAttr){
+						if($(elem).is("[number-score]")){
 							$scope.scoreResult(elem.value);
 
-						} else if(regAttr) {
+						} else if($(elem).is("[number-duration]")) {
 							$scope.durationResult(elem.value);
 
 						} else {
@@ -96,7 +92,7 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', '$timeout', 'stor
 						}
 
 						if(e.keyCode === 8 || elem.value == "" || elem.value == null) {
-							$timeout($scope.removeList($(this)), 1000); 
+							$scope.removeList($(this), ul); 
 						}
 
 						$scope.getTpl(tmp, elmt.parent());
@@ -108,6 +104,7 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', '$timeout', 'stor
 			};
 
 			$scope.scoreResult = function(score){
+				$scope.score = [];
 				$scope.searchScore = JSON.parse(storageFactory.getItms());  
 
 				angular.forEach($scope.searchScore, function(item) {
@@ -118,6 +115,7 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', '$timeout', 'stor
 			};
 
 			$scope.durationResult = function(duration){
+				$scope.duration = [];
 				$scope.searchDuration = JSON.parse(storageFactory.getItms());  
 
 				angular.forEach($scope.searchDuration, function(item) {
@@ -128,6 +126,7 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', '$timeout', 'stor
 			};
 
 			$scope.deysResult = function(days){
+				$scope.days = [];
 				$scope.searchDays = JSON.parse(storageFactory.getItms());  
 
 				angular.forEach($scope.searchDays, function(item) {
@@ -145,8 +144,8 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', '$timeout', 'stor
 				});
 			}
 			
-			$scope.removeList = function(elem){
-				$(elem).next().remove();
+			$scope.removeList = function(elem, ul){
+				$(elem).next(ul).remove();
 			}
 		}
 	};
@@ -157,7 +156,7 @@ myApp.directive('numberScore', [ function(){
 		restrict: 'A',
 		require: '^searchForm',
 		link: function(scope, element, attrs, searchFormController){
-			searchFormController.numberInput(element, attrs, '../angularCall/partials/search_ScoreTotal.tpl.html', 'keyup', '.search-score');
+			searchFormController.numberInput(element, attrs.numberScore, '../angularCall/partials/search_ScoreTotal.tpl.html', 'keyup', '.search-score');
 		}
 	}
 }]);
@@ -167,7 +166,7 @@ myApp.directive('numberDuration', [ function(){
 		restrict: 'A',
 		require: '^searchForm',
 		link: function(scope, element, attrs, searchFormController){
-			searchFormController.numberInput(element, attrs, '../angularCall/partials/search_Duration.tpl.html', 'keyup', '.search-duration');
+			searchFormController.numberInput(element, attrs.numberDuration, '../angularCall/partials/search_Duration.tpl.html', 'keyup', '.search-duration');
 		}
 	}
 }]);
@@ -177,12 +176,12 @@ myApp.directive('numberDays', [ function(){
 		restrict: 'A',
 		require: '^searchForm',
 		link: function(scope, element, attrs, searchFormController){
-			searchFormController.numberInput(element, attrs, '../angularCall/partials/search_Days.tpl.html', 'keyup', '.search-days');
+			searchFormController.numberInput(element, attrs.numberDays, '../angularCall/partials/search_Days.tpl.html', 'keyup', '.search-days');
 		}
 	}
 }]);
 
-myApp.directive('onKeydown', ['$compile', '$templateRequest', function($compile, $templateRequest){
+myApp.directive('numberAgent', ['$compile', '$templateRequest', function($compile, $templateRequest){
 	return {
 		restrict: 'A',
 		scope: true,
