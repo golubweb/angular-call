@@ -1,15 +1,16 @@
+
 myApp.filter("trustUrl", ['$sce', function ($sce) {
 	return function (recordingUrl) {
 		return $sce.trustAsResourceUrl(recordingUrl);
 	};
 }]);
 
-myApp.filter('moment', [ function () {
+myApp.filter('moment', function () {
 	return function (date, method) {
 		var momented = moment(date);
 		return momented[method].apply(momented, Array.prototype.slice.call(arguments, 2));
 	};
-}]);	
+});	
 
 
 myApp.filter('orderOneItem', function(){

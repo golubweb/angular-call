@@ -1,3 +1,4 @@
+
 myApp.directive('audios', ['$sce', function($sce) {
 	return {
 		restrict: 'A',
@@ -34,7 +35,7 @@ myApp.directive('pagination', ['$rootScope', '$interval', '$compile', '$template
 	}
 }]);
 
-myApp.directive('audioSource', [ function() {
+myApp.directive('audioSource', function() {
 	return {
 		restrict: 'A',
 		scope: true,
@@ -66,7 +67,7 @@ myApp.directive('audioSource', [ function() {
 			//myAudio.paused && myAudio.currentTime > 0 && !myAudio.ended
 		}
 	};
-}]);
+});
 
 myApp.directive('searchForm', ['$compile', '$templateRequest', '$timeout', 'storageFactory', function($compile, $templateRequest, $timeout, storageFactory){
 	return {
@@ -151,7 +152,7 @@ myApp.directive('searchForm', ['$compile', '$templateRequest', '$timeout', 'stor
 	};
 }]);
 
-myApp.directive('numberScore', [ function(){
+myApp.directive('numberScore', function(){
 	return {
 		restrict: 'A',
 		require: '^searchForm',
@@ -159,9 +160,9 @@ myApp.directive('numberScore', [ function(){
 			searchFormController.numberInput(element, attrs.numberScore, '../angularCall/partials/search_ScoreTotal.tpl.html', 'keyup', '.search-score');
 		}
 	}
-}]);
+});
 
-myApp.directive('numberDuration', [ function(){
+myApp.directive('numberDuration', function(){
 	return {
 		restrict: 'A',
 		require: '^searchForm',
@@ -169,9 +170,9 @@ myApp.directive('numberDuration', [ function(){
 			searchFormController.numberInput(element, attrs.numberDuration, '../angularCall/partials/search_Duration.tpl.html', 'keyup', '.search-duration');
 		}
 	}
-}]);
+});
 
-myApp.directive('numberDays', [ function(){
+myApp.directive('numberDays', function(){
 	return {
 		restrict: 'A',
 		require: '^searchForm',
@@ -179,7 +180,7 @@ myApp.directive('numberDays', [ function(){
 			searchFormController.numberInput(element, attrs.numberDays, '../angularCall/partials/search_Days.tpl.html', 'keyup', '.search-days');
 		}
 	}
-}]);
+});
 
 myApp.directive('numberAgent', ['$compile', '$templateRequest', function($compile, $templateRequest){
 	return {
@@ -197,7 +198,7 @@ myApp.directive('numberAgent', ['$compile', '$templateRequest', function($compil
 				if(agentName.length >= 3){
 					searchCtrl.agentResult(agentName);
 
-					$templateRequest('/partials/search_AgentID.tpl.html').then(function(html){
+					$templateRequest('../angularCall/partials/search_AgentID.tpl.html').then(function(html){
 						var template = angular.element(html);
 
 						elem.parent().append($compile(template)(scope));

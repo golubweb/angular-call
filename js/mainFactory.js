@@ -1,3 +1,4 @@
+
 //Storage Factory
 myApp.factory('storageFactory', ['$q', function($q) {
 	return {
