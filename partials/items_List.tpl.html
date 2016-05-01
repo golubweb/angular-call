@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="col-lg-8">
+	<div class="col-lg-8 col-md-12">
 		<div class="audio">
 			<div audios code="list[0].callMedias.audioFile"></div>
 		</div>
@@ -7,15 +7,15 @@
 		<section class="listWrap">
 			<article data-ng-repeat="item in list | orderOneItem: 'callId' | limitTo: howMany">
 				<div class="itemInfo">
-					<div class="playIcon col-lg-3">
+					<div class="playIcon col-lg-3 col-md-12">
 						<i class="fa fa-play" audio-source="{{ item.callMedias.audioFile }}" voice="{{ item.callId }}"></i>
 					</div>
 
-					<div class="itemCaption col-lg-6">
+					<div class="itemCaption col-lg-6 col-md-12">
 						<h4>Call ID#{{ item.callId }} - Duration: {{ item.hours + ':' + item.minutes + ':' + item.seconds }}</h4>
 					</div>
 
-					<div class="evlBtn col-lg-3">
+					<div class="evlBtn col-lg-3 col-md-12">
 						<h4><a href="#/call/{{ item.callId }}">Evaluate</a></h4>
 					</div>
 				</div>
@@ -68,7 +68,7 @@
 		<pagination size="{{ pagCount }}"></pagination>
 	</div>
 
-	<aside class="col-lg-3">
+	<aside class="col-lg-3 col-md-12">
 		<h2>Search items</h2>
 		<form form="searchCall" search-form >
 			<div class="rowHolder">

@@ -1,14 +1,14 @@
 <article data-ng-repeat="item in pgnItms | orderOneItem: 'callId' | limitTo: howMany">
 	<div class="itemInfo">
-		<div class="playIcon col-lg-3">
+		<div class="playIcon col-lg-3 col-md-12">
 			<i class="fa fa-play" audio-source="{{ item.callMedias.audioFile }}" voice="{{ item.callId }}"></i>
 		</div>
 
-		<div class="itemCaption col-lg-6" ng-init="year=item.year; month=item.month; day=item.day">
+		<div class="itemCaption col-lg-6 col-md-12" ng-init="year=item.year; month=item.month; day=item.day">
 			<h4>Call ID#{{ item.callId }} - Duration: {{ item.hours + ':' + item.minutes + ':' + item.seconds }}</h4>
 		</div>
 
-		<div class="evlBtn col-lg-3">
+		<div class="evlBtn col-lg-3 col-md-12">
 			<h4><a href="#/call/{{ item.callId }}">Evaluate</a></h4>
 		</div>
 	</div>
