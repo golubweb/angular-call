@@ -13,14 +13,14 @@ module.exports = function(grunt) {
 
 		concat: {
 			dist: {
-				src: ['js/app.js', 'js/mainCtrl.js', 'js/mainDirectives.js', 'js/mainFactory.js', 'js/mainFilters.js', 'js/mainSrvices.js'],
+				src: ['js/app.js', 'js/mainCtrl.js', 'js/mainDirectives.js', 'js/mainFactory.js', 'js/mainFilters.js', 'js/mainServices.js'],
 				dest: 'js/main.js'
 			}
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	sgrunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 
 	grunt.registerTask('default', ['cssmin','concat']);
 

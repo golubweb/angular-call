@@ -1,3 +1,4 @@
+
 myApp.config(['$routeProvider', function($routeProvider){
 	$routeProvider.
 		when('/', {templateUrl: 'partials/items_List.tpl.html', controller: 'mainCtrl'}).
@@ -115,7 +116,6 @@ myApp.controller('paginationCtrl', ['$scope', '$compile', '$templateRequest', 's
 
 
 myApp.controller('searchCtrl', ['$scope', 'storageFactory', function($scope, storageFactory){
-
 	this.agentResult = function(searchText){
 		$scope.agent = [];
 		$scope.searchAgent = JSON.parse(storageFactory.getItms());
@@ -128,6 +128,7 @@ myApp.controller('searchCtrl', ['$scope', 'storageFactory', function($scope, sto
 	}
 
 }]);
+
 
 myApp.directive('audios', ['$sce', function($sce) {
 	return {
@@ -340,6 +341,7 @@ myApp.directive('numberAgent', ['$compile', '$templateRequest', function($compil
 		}
 	}
 }]);
+
 //Storage Factory
 myApp.factory('storageFactory', ['$q', function($q) {
 	return {
@@ -373,6 +375,7 @@ myApp.factory('storageFactory', ['$q', function($q) {
 		}
 	}
 }]);
+
 myApp.filter("trustUrl", ['$sce', function ($sce) {
 	return function (recordingUrl) {
 		return $sce.trustAsResourceUrl(recordingUrl);
@@ -467,3 +470,29 @@ myApp.filter('dateConvert', function(){
 		return item;
 	}
 });
+
+myApp.service('callServices', ['$http', function($http){
+	return {
+		getData: function(url) {
+			var getData = {};
+
+			this.getData = $http({
+				method: 'GET',
+				url: url
+			});
+
+			return this.getData;
+		},
+
+		itemData: function() {
+			var itmData = {};
+
+			this.itmData = $http({
+				method: 'GET',
+				url: url
+			});
+
+			return this.itmData;
+		}
+	}
+}]);
