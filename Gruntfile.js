@@ -5,15 +5,36 @@ module.exports = function(grunt) {
 		
 		concat: {
 			dist: {
-				src: ['js/app.js', 'js/mainCtrl.js', 'js/mainDirectives.js', 'js/mainFactory.js', 'js/mainFilters.js', 'js/mainServices.js'],
-				dest: 'js/main,js'
+				src: ['app/app.js',
+				      'app/routes.js', 
+				      'app/*/mainCtrl.js', 
+				      'app/*/itemCtrl.js', 
+				      'app/*/paginationCtrl.js', 
+				      'app/*/searchCtrl.js', 
+				      'app/*/audios.js', 
+				      'app/*/pagination.js', 
+				      'app/*/audioSource.js', 
+				      'app/*/searchForm.js', 
+				      'app/*/numberScore.js', 
+				      'app/*/numberDuration.js', 
+				      'app/*/numberDays.js', 
+				      'app/*/numberAgent.js', 
+				      'app/*/storageFactory.js', 
+				      'app/*/trustUrl.js', 
+				      'app/*/moment.js', 
+				      'app/*/orderOneItem.js', 
+				      'app/*/durationConvert.js', 
+				      'app/*/dateConvert.js', 
+				      'app/*/callServices.js'
+				],
+				dest: 'dist/app.js'
 			}
 		},
 
 		cssmin: {
 			combine: {
 				files: {
-					'css/style.min.css': ['css/style.css', 'css/responsiv.css']
+					'dist/style.min.css': ['assets/css/style.css', 'assets/css/responsiv.css']
 				}
 			}
 		}
@@ -23,6 +44,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 
-	grunt.registerTask('default', ['cssmin','concat']);
+	grunt.registerTask('default', ['cssmin', 'concat']);
 
 }

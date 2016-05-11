@@ -1,0 +1,43 @@
+
+<div audios code="call.callMedias.audioFile"></div>
+
+<form name="callFrm" ng-submit="insertCallFrm()">
+	<div class="form-group">
+		<label>Customer Score: </label> 
+		<span class="radio-inline" ng-repeat="n in range( 10 ) track by $index"> 
+			<input type="radio" name="csmScore" ng-model="call.evaluation.customerScore" ng-value="$index + 1" ng-change="totalScore()" /> <span> - {{ $index + 1 }}</span>
+		</span>
+	</div>
+
+	<div class="form-group">
+		<label>Manager Score: </label> 
+		<span class="radio-inline" ng-repeat="n in range( 10 ) track by $index"> 
+			<input type="radio" name="mngScore" ng-model="call.evaluation.managerScore" ng-value="$index + 1" ng-change="totalScore()" /> <span> - {{ $index + 1 }}</span>
+		</span>
+	</div>
+
+	<div class="form-group">
+		<label>Improvement: </label> 
+		<select name="imvText" ng-model="filterCondition.operator">
+			<option value="" selected hidden />
+			<option ng-selected="option.value == filterCondition.operator" ng-repeat="option in improvement" value="option.value">{{ option.name }}</option>
+		</select>
+	</div>
+
+	<div class="form-group">
+		<label>Resume:</label>
+		<textarea class="form-control" name="rsmText" ng-model="call.evaluation.resume" />
+	</div>
+	<p>
+		<label>Total Score: </label> 
+		<span ng-show="call.oldTotal">{{ call.evaluation.totalScore }}</span> 
+		<span ng-show="call.newTotal" ng-init="customer=call.evaluation.customerScore; evaluation=call.evaluation.managerScore">{{ total }}</span>
+	</p>
+
+	<p>
+		<span>{{ msgForm }}</span>
+	</p>
+
+	<input type="submit" value="Save" class="btn btn-primary" />
+</form>
+<button ng-click="resetFrm()" class="btn btn-default">Cancel</button>
