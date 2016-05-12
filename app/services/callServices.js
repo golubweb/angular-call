@@ -2,7 +2,7 @@
 *
 * @author: Darko Golubovic
 * @date: 11-05-2016
-* @description: CallServise is used that we can take calls.jason and return it like object list
+* @description: CallServise is used that we can take calls.json and return it like object list
 *
 ***************************/
 
